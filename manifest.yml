@@ -1,0 +1,10 @@
+applications:
+- name: glambuzz
+  command: npm start
+  buildpack: https://github.com/cloudfoundry/nodejs-buildpack
+  disk_quota: 1G
+  instances: 1
+  memory: 512M
+  routes:
+  - route: glambuzz.cfapps.io
+  stack: cflinuxfs2
